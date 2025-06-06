@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmoniq - Streaming de Música</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <h1>Harmoniq</h1>
+            </div>
+            <nav class="menu">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Início</a>
+                <a href="artistas.html"><i class="fas fa-user"></i> Artistas</a>
+                <a href="albuns.html"><i class="fas fa-compact-disc"></i> Álbuns</a>
+                <a href="generos.html"><i class="fas fa-music"></i> Gêneros</a>
+                <a href="buscar.html"><i class="fas fa-search"></i> Buscar</a>
+            </nav>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar músicas, artistas ou álbuns...">
+                </div>
+            </div>
+            <section class="featured">
+                <h2>Músicas em Destaque</h2>
+                <div class="music-grid" id="featured-grid">
+                    <!-- Cards de música serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+            <section class="recent">
+                <h2>Álbuns Recentes</h2>
+                <div class="album-grid" id="recent-albums">
+                    <!-- Cards de álbuns serão inseridos aqui via JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Player Fixo -->
+        <div class="player">
+            <div class="now-playing">
+                <img src="" alt="Capa do álbum" id="current-cover">
+                <div class="track-info">
+                    <h3 id="current-title">Nenhuma música selecionada</h3>
+                    <p id="current-artist">-</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button id="shuffle" class="control-btn"><i class="fas fa-random"></i></button>
+                <button id="prev" class="control-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="play" class="control-btn play-btn"><i class="fas fa-play"></i></button>
+                <button id="next" class="control-btn"><i class="fas fa-step-forward"></i></button>
+                <button id="repeat" class="control-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span id="duration">0:00</span>
+            </div>
+            <div class="volume-control">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" id="volume" min="0" max="100" value="100">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

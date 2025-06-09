@@ -1,6 +1,6 @@
-#  HarmoniQ - Plataforma de Streaming de Música
+#  HarmoniQ - API de músicas
 
-Olá! Me chamo [Seu Nome], e este é o **HarmoniQ**, um projeto desenvolvido como parte do curso técnico em Desenvolvimento de Sistemas no **SENAI Jandira**. O objetivo principal foi aplicar, na prática, os conhecimentos adquiridos em sala de aula, desenvolvendo uma plataforma web moderna, funcional e com uma proposta visual única.
+O **HarmoniQ**, um projeto desenvolvido como parte do curso técnico em Desenvolvimento de Sistemas no **SENAI Jandira**. O objetivo principal foi aplicar, na prática, os conhecimentos adquiridos em sala de aula, desenvolvendo uma plataforma web moderna, funcional e com uma proposta visual única.
 
 ---
 
